@@ -7,6 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
 </head>
+<style>
+	.text-center {
+		text-align: center;
+	}
+</style>
 <body class="shower list">
 
 	<header class="caption">
@@ -15,14 +20,9 @@
 	</header>
 
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<figure>
-			<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
-		</figure>
+		<h2>Theory of Web</h2>
+		<p>Brought to you by <a href="https://github.com/igocooper">iGoCooper</a></p>
+		<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
 		<style>
 			#cover h2 {
 				margin:30px 0 0;
@@ -44,152 +44,449 @@
 	</section>
 
 	<section class="slide">
-		<h2>Shower key features</h2>
+		<img class="cover" src="pictures/inet.png" alt="basic internet scheme picture">
+	</section>
+
+	<section class="slide">
+		<h2>Agenda</h2>
 		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-	</section>
-
-	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-	</section>
-
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
+			<li>IP - everything should has an adress</li>
+			<li class="next">DNS - everything should has a human readable adress</li>
+			<li class="next">TCP / UDP</li>
+			<li class="next">HTTP evolution history</li>
+			<li class="next">HTTPS - protect your user</li>
+			<li class="next">HTTP 2.0 - what is the future like</li>
 		</ol>
 	</section>
 
-	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
+	<section class="slide" id="picture">
+		<h2>IP - internet protocol</h2>
+		<img class="cover" src="pictures/ip.png" alt="network connection over the world">
+		<style>
+			#picture h2 {
+				color:#FFF;
+			}
+
+			#picture img {
+				width: 120vw;
+				height:110vh;
+			}
+
+			#picture h2 {
+				margin:30px 0 0;
+				color:#FFF;
+				text-align:center;
+				font-size:70px;
+			}
+		</style>
 	</section>
 
 	<section class="slide">
-		<h2>Code samples</h2>
+		<a href="https://youtu.be/AE6GJVKcukU?t=35m47s" target="_blank">
+			<img class="cover" src="pictures/router.jpg" alt="basic internet scheme picture">
+		</a>
+	</section>
+
+	<section class="slide ip">
+		<h2>IPv4 - 32 бітне число</h2>
+		<p>10.60.xx.xx</p>
+		<p>192.168.xx.xx</p>
+		<style>
+			.ip p {
+				font-weight: 400;
+				font-size: 36px;
+				color: #7d7f84;
+				 margin-bottom: 0;
+				font-family: 'roboto', sans-serif;
+			}
+		</style>
+	</section>
+
+	<section class="slide ip">
+		<h2>IPv6 - 128 бітне число</h2>
+		<p class="grey">2001:db8:85a3:8d3:1319:8a2e:370:7348</p>
+
+		<p style="color: #000; font-weight: 400; font-size: 24px;">2<sup>64</sup> = 1.844674407 x 10<sup>19</sup>	 is IPv6’s standard subnet size. <br>
+			2<sup>128</sup> = 3.402823669 x 10<sup>38</sup>  is IPv6’s address space size.
+		</p>
+		<style>
+			.grey {
+				font-weight: 400;
+				font-size: 36px;
+				color: #7d7f84;
+				margin-bottom: 0;
+				font-family: 'roboto', sans-serif;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">DNS</h2>
+	</section>
+
+	<section class="slide">
+		<img class="cover" src="pictures/dns.jpg" alt="showing road symbol">
+	</section>
+	<section class="slide">
+		<img class="cover" src="pictures/dns_real.png" alt="dns table example">
+	</section>
+
+	<section class="slide">
+		<h2>PORT</h2>
+		<p>Унікальний ідентифікатор сервісу</p>
+	</section>
+
+	<section class="slide">
+		<table>
+			<tr style="font-weight: 600;">
+				<td>Protocol</td>
+				<td>Port</td>
+			</tr>
+			<tr>
+				<td>HTTP</td>
+				<td>80</td>
+			</tr>
+			<tr>
+				<td>HTTPS</td>
+				<td>443</td>
+			</tr>
+			<tr>
+				<td>FTP</td>
+				<td>21</td>
+			</tr>
+			<tr>
+				<td>SMTP</td>
+				<td>25</td>
+			</tr>
+		</table>
+		<p>"IP адреса і номер порта" - називається  "сокет"</p>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">TCP</h2>
+	</section>
+
+	<section class="slide">
+		<h2>TCP - Transmission Control Protocol</h2>
+		<ul>
+			<li>Встановлює TCP з'єднання шляхом потрійного рукостискання</li>
+			<li>Конторлює передачу пакетів данних.</li>
+			<li>Контролює навантаження на мережу</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Потрійне рукостискання:</h2>
+		<p>Послідовний обмін пакетами між клієнтом і сервером, що дозволяє встановити TCP зв'язок для подальшої передачі данних</p>
+	</section>
+
+	<section class="slide">
+		<img class="cover" src="pictures/3handshaking.jpg" alt="tcp connection triple handshaking scheme">
+	</section>
+
+	<section class="slide">
+		<ul>
+			<li>SYN — Клієнт генерує випадкове число, наприклад, x, і відправляє його на сервер.</li>
+			<li>SYN ACK — Сервер підтверджує цей запит, відправивши назад пакет ACK, з випадковим числом, і число x + 1 отримане від клієнта.</li>
+			<li>ACK — клієнт збільшує число y і посилає y + 1 на сервер.</li>
+		</ul>
+		<p></p>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">UDP</h2>
+	</section>
+
+	<section class="slide">
+		<h2>UDP - User Datagram Protocol</h2>
+		<p>
+			UDP — транспортний протокол для передачі повідомленнь-датаграм без необхідності встановлення з'єдняння в IP-мережі.
+		</p>
+	</section>
+
+	<section class="slide">
+		<h2>TCP vs UDP</h2>
+		<ul>
+			<li>TCP гарантує доставку пакетів даних в незмінному вигляді, в правильній послідовності і без втрат, UDP нічого не гарантує.</li>
+			<li>TCP вимагає заздалегідь встановленого з'єднання, UDP з'єднання не вимагає.</li>
+			<li>UDP забезпечує більш високу швидкість передачі даних.</li>
+			<li>TCP надійніший і здійснює контроль над процесом обміну даними.</li>
+			<li>UDP краще для програм, що відтворюють потокове відео, відеофонії і телефонії, мережевих ігор.</li>
+		</ul>
+		<p></p>
+	</section>
+
+	<section class="slide">
+		<h2>HTTP - Hyper Text Transfer Protocol</h2>
+		<p>
+			HTTP - це протокол прикладного рівня, реалізований поверх протоколу TCP / IP.
+		</p>
+	</section>
+
+	<section class="slide">
+		<img class="cover" src="pictures/http.jpg" alt="http connection scheme">
+	</section>
+
+	<section class="slide">
+		<h2>HTTP versions:</h2>
+		<ul>
+			<li>HTTP / 0.9 - 1991</li>
+			<li>HTTP/1.0 — 1996</li>
+			<li>HTTP/1.1 – 1999</li>
+			<li>HTTP/2 — 2015</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>HTTP / 0.9 перший стандарт</h2>
+		<p>Клієнт міг зробити лише <strong>GET</strong> запит зразка: </p>
+		<code>
+			<span class="method">GET</span> /index.html
+		</code>
+		<p><b>Server response:</b></p>
 		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
+			<code>(response body)</code>
+			<code>(connection closed)</code>
+		</pre>
+		<style>
+			.method {
+				color: #BB4EA4;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<p>Ось так виглядав простий запит по протоколу <strong>HTTP / 1.0</strong>:</p>
+
+		<pre>
+			<code><span class="method">GET</span> / HTTP/1.0</code>
+			<code><span class="header">Host:</span> kamranahmed.info</code>
+			<code><span class="header">User-Agent:</span> Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5)</code>
+			<code><span class="header">Accept:</span> */*</code>
+		</pre>
+		<style>
+			.method {
+				color: #BB4EA4;
+			}
+
+			.header {
+				color: #50A3A1;
+			}
+
+			.status {
+				color: #9D6E01;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<p>Ось так виглядала проста відповідь сервера по протоколу <strong>HTTP / 1.0</strong>:</p>
+
+		<pre>
+			<code>HTTP/1.0 <span class="status">200</span> OK</code>
+			<code><span class="header">Content-Type:</span> text/plain</code>
+			<code><span class="header">Content-Length:</span> 137582</code>
+			<code><span class="header">Expires:</span> Thu, 05 Dec 1997 16:00:00 GMT</code>
+			<code><span class="header">Last-Modified:</span> Wed, 5 August 1996 15:55:28 GMT</code>
+			<code><span class="header">Server:</span> Apache 0.84</code>
+
+			<code>(response body)</code>
+			<code>(connection closed)</code>
 		</pre>
 	</section>
 
 	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
+		<h2>HTTP / 1.0  мінуси</h2>
+		<ul>
+			<li>Неможливо надіслати декілька запитів під час одного з'єднання.</li>
+			<li>Кожен додатковий ресурс = нове TCP з'єднання</li>
+			<li>TCP з'єднання вимагає 3-ного рукостискання після якого настає <a  style="text-decoration: none;" href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%81%D1%82%D0%B0%D1%80%D1%82" target="_blank"><em style="color: dodgerblue;">повільний старт</em></a></li>
+			<li>Не передбачена підтримка станів.</li>
+			<li>Cервер не зберігає інформації про клієнта, тому кожному запиту доводиться включати в себе всю необхідну серверу інформацію</li>
+			<li>Клієнт посилає дані, що повторюються, зайве перевантажуючи мережу.</li>
+		</ul>
 	</section>
 
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<figure>
-			<img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
-		</figure>
+	<section class="slide">
+		<h2><span class="header">Connection:</span> keep-alive</h2>
+		<quote>
+			"Эй, дружище, не закрывай это соединение, оно нам ещё пригодится"
+		</quote>
 		<style>
-			#picture h2 {
-				color:#FFF;
-				}
+			.header {
+				color: #50A3A1;
+			}
 		</style>
 	</section>
 
 	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
+		<h2>HTTP / 1.1 </h2>
+		<ul>
+			<li><strong>Нові HTTP-методи:</strong> PUT, PATCH, HEAD, OPTIONS, DELETE.</li>
+			<li><strong>Ідентифікація хостів:</strong> У HTTP / 1.0 заголовок Host не був обов'язковим, а HTTP / 1.1 зробив його таким.</li>
+			<li><strong>Постійні з'єднання:</strong> Для закриття з'єднання необхідно надіслати заголовок <span class="header">Connection: close</span></li>
+			<li><strong>Потокова передача данних:</strong> Задопомогою заголовку <span class="header">Content-Length:</span></li>
+			<li><strong>Кешування</strong></li>
+			<li><strong>Клієнтські Cookies</strong></li>
+		</ul>
 	</section>
 
 	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
+		<h2>HTTP / 1.1 недоліки</h2>
+		<ul>
+			<li>HTTP / 1.1 підтримує лише одне зовнішнє з'єднання в будь-який момент часу</li>
+			<li><strong><em>head-of-line blocking</em></strong></li>
+			<li><strong><em>Неможливо використовувати потокову передачу данних, якщо данні динамічні.</em></strong></li>
+		</ul>
 	</section>
 
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
+	<section class="slide">
+		<h2>Streaming Dynamic data issue</h2>
+		<p>Chunked encoding - механізм розбиття інформації на невеликі частини (chunks) і їх передачу.</p>
 	</section>
 
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
-		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
-		</style>
+
+	<section class="slide">
+		<h2 class="shout shrink">SPDY</h2>
+	</section>
+
+	<section class="slide">
+		<h2>SPDY — 2009</h2>
+		<ul>
+			<li>Мультиплексування</li>
+			<li>Зжимання данних</li>
+			<li>Пріоритизація</li>
+			<li>Безпека</li>
+		</ul>
+		<p>У 2015 в Google вирішили, що не повинно бути двох конкуруючих стандартів, і об'єднали SPDY з HTTP, давши початок HTTP / 2.</p>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">HTTP / 2</h2>
+	</section>
+
+	<section class="slide">
+		<h2>HTTP / 2</h2>
+		<ul>
+			<li><strong>Бінарний замість текстового</strong></li>
+			<li><strong>Мультиплексування</strong> - передача декількох асинхронних HTTP-запитів по одному TCP-з'єднання</li>
+			<li><strong>Стиснення заголовків методом HPACK</strong></li>
+			<li><strong>Server Push</strong> - кілька відповідей на один запит</li>
+			<li><strong>Пріоритизація запитів</strong></li>
+			<li><strong>Безпека</strong></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Бінарні повідомлення:</h2>
+		<p>Бінарні повідомлення швидше розбираються автоматично, але, на відміну від HTTP / 1.x, не зручні для читання людиною. Основні складові HTTP / 2 - <strong>фрейми (Frames)</strong> і <strong>потоки (Streams)</strong>.</p>
+	</section>
+
+	<section class="slide">
+		<img class="cover" src="pictures/frames.png" alt="http connection scheme">
+	</section>
+
+	<section class="slide">
+		<h2>Зжимання заголовіків методом HPACK:</h2>
+		<p>Якщо ми постійного звертаємося до сервера з одного і того ж клієнта, то в заголовках раз по раз посилається величезна кількість повторюваних даних.</p>
+	</section>
+
+	<section class="slide">
+		<img class="cover" src="pictures/headersHpack.png" alt="http connection scheme">
+	</section>
+
+	<section class="slide">
+		<h2>Server Push</h2>
+		<p>Сервер, знаючи, що клієнт збирається запросити певний ресурс, може відправити його, не чекаючи запиту. Сервер відправляє спеціальний фрейм PUSH_PROMISE</p>
+	</section>
+
+	<section class="slide">
+		<h2>Пріоритизація</h2>
+		<p>Клієнт може призначити пріоритет потоку, додавши інформацію про пріоритет у фрейм HEADERS,
+			яким відкривається потік. Будь-який інший час клієнт може відправити фрейм PRIORITY,
+			який змінює пріоритет потоку.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Безпека</h2>
+		<p>HTTP/2 повинен бути реалізованный поверх TLS, хоч спецмфікація цього не вимагає.</p>
+	</section>
+
+	<section class="slide">
+		<h2>HTTPS</h2>
+		<ul>
+			<li><strong>конфіденційність</strong></li>
+			<li><strong>цілісність</strong></li>
+			<li><strong>достовірність</strong></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Конфіденційність</h2>
+		<ul>Щоб дві сторони могли спілкуватися, вони повинні прийти до згоди з двох питань:
+			<li>Який алгоритм (шифрувальну функцію) використовувати в комунікації.</li>
+			<li>Які параметри, паролі або правила (тобто секрет) будуть використовуватися для обраного методу.</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Шифрування</h2>
+		<ul>
+			<li><strong>симетричне</strong> -  Обидві сторони володіють загальним секретним ключем.</li>
+			<li><strong>асиметричне</strong> - Одна зі сторін володіє парою з публічного і секретного ключів,
+				представляючи основу інфраструктури публічних ключів (public key infrastructure, PKI).</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<img class="cover" src="pictures/sync.png" alt="synchronic https connection">
+	</section>
+
+	<section class="slide">
+		<img class="cover" src="pictures/async.png" alt="synchronic https connection">
+	</section>
+
+	<section class="slide">
+		<h2>Цілісність</h2>
+		<p>
+			Для забезпечення цілісної передачі інформації використовуються алгоритми дайджест повідомлення.
+			Обчислення кодів аутентифікації повідомлень (MAC) для кожного повідомлення
+			при обміні.
+		</p>
+		<ul>
+			<strong>Tаким чином неможливо:</strong>
+			<li>змінити повідомлення, не затронувши тег</li>
+			<li>згенерувати однаковий тег для двох різних повідомлень</li>
+			<li>перехопити процес і отримати оригінальне повідомлення з тега</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Перевірка аутентичності</h2>
+		<p>Виконується третьою стороною - <strong>центром сертифікації (CA)</strong></p>
+		<p><strong>CA</strong> випускає сертифікат з підтвердженням того, що доменне ім'я example.com (унікальний ідентифікатор)
+			пов'язано з публічним ключем XXX. У деяких випадках <strong>CA</strong> також
+			перевіряє, що конкретна компанія контролює цей домен.
+		</p>
+	</section>
+
+	<section class="slide">
+		<h2>Види сертифікатів</h2>
+		<ul>
+			<li>Підтверджений домен (DV)</li>
+			<li>Розширене підтвердження (EV)</li>
+			<li>Підтверджена організація (OV)</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>References:</h2>
+		<ul>
+			<li><a href="http://www.ra.ethz.ch/cdstore/www8/data/2136/pdf/pd1.pdf">HTML 1.1 VS HTML 1.0</a></li>
+			<li><a href="https://thedifference.ru/chem-otlichaetsya-protokol-tcp-ot-udp">UDP VS TCP</a></li>
+			<li><a href="https://habrahabr.ru/post/308846/">Journey to HTTP/2 - (Kamran Ahmed / перевод: Андрей Алексеев)</a></li>
+			<li><a href="https://youtu.be/AE6GJVKcukU?t=16m23s">CS50 course on Network basics</a></li>
+		</ul>
 	</section>
 
 	<footer class="badge">
@@ -199,7 +496,5 @@
 	<div class="progress"></div>
 
 	<script src="node_modules/shower-core/shower.min.js"></script>
-	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
-
 </body>
 </html>
